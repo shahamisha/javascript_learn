@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h2>What Can JavaScript Do?</h2>
+    <h2>BULB</h2>
 
-    <p id="demo">JavaScript can change HTML content.</p>
+    <button onclick="document.getElementById('myImage').src='on.jpg'">
+      on
+    </button>
 
-    <button
-      type="button"
-      onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'
-    >
-      Click Me!
+    <img id="myImage" src="off.jpg" style="width: 100px" />
+
+    <button onclick="document.getElementById('myImage').src='off.jpg'">
+      off
     </button>
   </body>
 </html>
