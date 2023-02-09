@@ -476,3 +476,15 @@ const date = new Date("2022-03-25"); */
 // \v	Vertical Tabulator
 
 /*---------------------------------------------------------------------------------*/
+
+// JavaScript Strings as Objects(strings can also be defined as objects with the keyword new:)
+// // x is a string
+// let x = "John";
+
+// // y is an object
+// let y = new String("John");
+
+// document.getElementById("demo").innerHTML =
+// typeof x + "<br>" + typeof y;
+// Output: string
+// object
