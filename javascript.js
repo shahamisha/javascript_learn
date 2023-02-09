@@ -1,18 +1,16 @@
 // //simple external javascript example
 // function myFunction() {
-//   document.getElementById("demo").innerHTML = "My Name is Amisha";
+// document.getElementById("demo").innerHTML = "My Name is Amisha";
 // }
 
 /*---------------------------------------------------------------------------------*/
 
-// <!--  display data using innerHTML
-//     <script>
-//       document.getElementById("demo").innerHTML = 5 + 6;
-//     </script> -->
+//  display data using innerHTML
+//<script>document.getElementById("demo").innerHTML = 5 + 6;</script>;
 
 // <!-- display data using document.write
 // <script>
-//   document.write(25 + 26);
+// document.write(25 + 26);
 // </script> -->
 
 /*---------------------------------------------------------------------------------*/
@@ -163,6 +161,34 @@
 // </script>;
 // -->
 
+// <--Adding JavaScript Strings
+// The += assignment operator can also be used to add (concatenate) strings:
+//  <script>
+// let text1 = "What a very ";
+// text1 += "nice day";
+// document.getElementById("demo").innerHTML = text1;
+// </script> -->
+
+// <-- Adding Strings and Numbers
+// Adding two numbers, will return the sum, but adding a number and a string will return a string:
+// <script>
+// let x = 5 + 5;
+// let y = "5" + 5;
+// let z = "Hello" + 5;
+// document.getElementById("demo").innerHTML =
+// x + "<br>" + y + "<br>" + z;
+// </script>
+// output:10
+// 55
+// Hello5 -->
+
+// <--The exponentiation operator (**) raises the first operand to the power of the second operand.
+// <script>
+// let x = 5;
+//document.getElementById("demo").innerHTML = x ** 2;
+// </script>
+// Output: 25-->
+
 // <-- 	Arithmetic Operator
 //       Addition(+).. Substraction(-).. Multiplication(*).. 	Exponentiation (**)
 //       Division(/).. 	Modulus (Division Remainder)(%)... 	Increment(++).. 	Decrement(--)
@@ -193,11 +219,128 @@
 //  -->
 /*---------------------------------------------------------------------------------*/
 
+//(1)<-- let x = 16 + 4 + "Volvo";
+// document.getElementById("demo").innerHTML = x;
+// Output: 20Volvo -->
+
+//(2) <-- let x = "Volvo" + 16 + 4;
+// document.getElementById("demo").innerHTML = x;
+// Output: Volvo164; -->
+
+//In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+//In the second example, since the first operand is a string, all operands are treated as strings.
 /*---------------------------------------------------------------------------------*/
+{
+  /*JavaScript has 8 Datatypes
+1. String      2. Number    3. Bigint   4. Boolean
+5. Undefined   6. Null      7. Symbol   8. Object
+
+The Object Datatype
+The object data type can contain:
+1. An object    2. An array   3. A date */
+}
+
+//Examples:
+{
+  /* // Numbers:(Numbers can be written with, or without decimals:)
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25"); */
+}
+
+/*---------------------------------------------------------------------------------*/
+// <-- JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+// let x;       // Now x is undefined
+// x = 5;       // Now x is a Number
+// x = "John";  // Now x is a String
+// document.getElementById("demo").innerHTML = x;
+// Output: John
+// -->
+
+/*---------------------------------------------------------------------------------*/
+// <-- Exponential Notation
+// let y = 123e5;
+// let z = 123e-5;
+
+// document.getElementById("demo").innerHTML = y + "<br>" + z;
+// Output: 12300000
+// 0.00123 -->
 
 /*---------------------------------------------------------------------------------*/
 
-/*---------------------------------------------------------------------------------*/
+// <-- JavaScript BigInt
+
+// let x = BigInt("123456789012345678901234567890");
+// document.getElementById("demo").innerHTML = x;
+// Output: 123456789012345678901234567890; -->
 
 /*---------------------------------------------------------------------------------*/
+
+//<-- JavaScript Booleans(Booleans can only have two values: true or false.)
+
+// let x = 5;
+// let y = 5;
+// let z = 6;
+
+// document.getElementById("demo").innerHTML = (x == y) + "<br>" + (x == z); -->
+
+/*---------------------------------------------------------------------------------*/
+
+// <-- JavaScript Arrays (written with square brackets, Array items are separated by commas)
+// const cars = ["Saab", "Volvo", "BMW"];
+
+// document.getElementById("demo").innerHTML = cars[0];
+// output: Saab -->>
+
+/*---------------------------------------------------------------------------------*/
+
+// <-- JavaScript Objects(JavaScript objects are written with curly braces {}.
+//     Object properties are written as name:value pairs, separated by commas.)
+// const person = {
+//   firstName: "Amisha",
+//   lastName: "Shah",
+//   age: 23,
+//   eyeColor: "brown",
+// };
+
+// document.getElementById("demo").innerHTML =
+//   person.firstName + " is " + person.age + " years old.";
+// Output: Amisha is 23 years old. -->
+
+/*---------------------------------------------------------------------------------*/
+
+// <-- The typeof Operator(The typeof operator returns the type of a variable or an expression:)
+// document.getElementById("demo").innerHTML =
+//   typeof "" + "<br>" + typeof "Ami" + "<br>" + typeof "Ami Shah"; -->
+
+/*---------------------------------------------------------------------------------*/
+// <-- undefined(a variable without a value, has the value undefined. The type is also undefined.)
+// let car;
+// document.getElementById("demo").innerHTML = car + "<br>" + typeof car; -->
+
+/*---------------------------------------------------------------------------------*/
+
+// <-- Empty Values(An empty value has nothing to do with undefined.)
+// let car = "";
+// document.getElementById("demo").innerHTML =
+//   "The value is: " + car + "<br>" + "The type is: " + typeof car; -->
+
+/*---------------------------------------------------------------------------------*/
+
 /*---------------------------------------------------------------------------------*/
