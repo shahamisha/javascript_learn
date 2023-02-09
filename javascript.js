@@ -368,3 +368,55 @@ const date = new Date("2022-03-25"); */
 // undefined -->
 
 /*---------------------------------------------------------------------------------*/
+// <-- JavaScript Objects (Objects are variables too. The values are written as name:value pairs )
+// // Create an object:
+// const car = { type: "Fiat", model: "500", color: "white" };
+
+// // Display some data from the object:
+// document.getElementById("demo").innerHTML = "The car type is " + car.type;
+// Output: The car type is Fiat -->
+
+/*---------------------------------------------------------------------------------*/
+
+// <-- Accessing Object Properties(You can access object properties in two ways:
+//     (1)objectName.propertyName   (2objectName["propertyName"])
+
+// // Create an object:
+// const person = {
+//   firstName: "Shruti",
+//   lastName : "Shah",
+//   id     :  111
+// };
+
+// // Display some data from the object:
+// document.getElementById("demo").innerHTML =
+// person.firstName + " " + person.lastName;
+
+// Output: Shruti Shah -->
+
+/*---------------------------------------------------------------------------------*/
+
+//<-- Accessing Object Methods(object method with the following syntax objectName.methodName())
+
+// // Create an object:
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   id: 5566,
+//   fullName: function() {
+//     return this.firstName + " " + this.lastName;
+//   }
+// };
+
+// // Display data from the object:
+// document.getElementById("demo").innerHTML = person.fullName();
+//  Output: John Doe -->
+
+/*---------------------------------------------------------------------------------*/
+
+// Do Not Declare Strings, Numbers, and Booleans as Objects!
+// When a JavaScript variable is declared with the keyword "new", the variable is created as an object:
+// x = new String();        // Declares x as a String object
+// y = new Number();        // Declares y as a Number object
+// z = new Boolean();       // Declares z as a Boolean object
+// Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
