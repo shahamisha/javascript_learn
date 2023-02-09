@@ -452,3 +452,27 @@ const date = new Date("2022-03-25"); */
 
 // let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // document.getElementById("demo").innerHTML = text.length; -->
+
+/*---------------------------------------------------------------------------------*/
+
+// Escape Character(Because strings must be written within quotes, JavaScript will misunderstand this string:)
+
+// (1)\'	'	Single quote
+// (2)\"	"	Double quote
+// (3)\\	\	Backslash
+
+// Example:
+// let text = "We are the so-called \"Vikings\" from the north.";
+// document.getElementById("demo").innerHTML = text;
+
+// Output: We are the so-called "Vikings" from the north.
+
+// Six other escape sequences are valid in JavaScript:
+// \b	Backspace
+// \f	Form Feed
+// \n	New Line
+// \r	Carriage Return
+// \t	Horizontal Tabulator
+// \v	Vertical Tabulator
+
+/*---------------------------------------------------------------------------------*/
