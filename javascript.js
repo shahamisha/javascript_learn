@@ -437,3 +437,18 @@ const date = new Date("2022-03-25"); */
 //   document.getElementById("demo").innerHTML = Date();
 //  }*/
 // }
+
+/*---------------------------------------------------------------------------------*/
+
+// //<-- JavaScript Strings(You can use single or double quotes:)
+// let carName1 = "Volvo XC60"; // Double quotes
+// let carName2 = "Volvo XC60"; // Single quotes
+
+// document.getElementById("demo").innerHTML = carName1 + " " + carName2; -->
+
+/*---------------------------------------------------------------------------------*/
+
+// //<-- String Length (To find the length of a string,)
+
+// let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// document.getElementById("demo").innerHTML = text.length; -->
