@@ -420,3 +420,20 @@ const date = new Date("2022-03-25"); */
 // y = new Number();        // Declares y as a Number object
 // z = new Boolean();       // Declares z as a Boolean object
 // Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
+/*---------------------------------------------------------------------------------*/
+
+//  {/* <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+// in above example, the JavaScript code changes the content of the element with id="demo" */}
+
+// JavaScript HTML Events
+// {/* <button onclick="this.innerHTML=Date()">The time is?</button>
+//  In this example, the code changes the content of its own element (using this.innerHTML):*/}
+
+//Click the button to display the date.
+// {
+//   /*
+// function displayDate() {
+//   document.getElementById("demo").innerHTML = Date();
+//  }*/
+// }
