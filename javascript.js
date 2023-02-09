@@ -343,4 +343,12 @@ const date = new Date("2022-03-25"); */
 
 /*---------------------------------------------------------------------------------*/
 
+// <-- JavaScript Function (A JavaScript function is a block of code designed to perform a particular task)
+
+// function myFunction(p1, p2) {
+//   return p1 * p2;
+// }
+// document.getElementById("demo").innerHTML = myFunction(4, 3);
+// Output: 12 -->
+
 /*---------------------------------------------------------------------------------*/
