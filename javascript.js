@@ -352,3 +352,19 @@ const date = new Date("2022-03-25"); */
 // Output: 12 -->
 
 /*---------------------------------------------------------------------------------*/
+
+// <-- Local Variables(Variables declared within a JavaScript function, become LOCAL to the function.
+// Local variables can only be accessed from within the function.)
+
+// myFunction();
+
+// function myFunction() {
+//   let carName = "Eco";
+//   document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+// }
+
+// document.getElementById("demo2").innerHTML = typeof carName;
+// Output: string Volvo
+// undefined -->
+
+/*---------------------------------------------------------------------------------*/
