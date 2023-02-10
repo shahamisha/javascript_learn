@@ -1052,6 +1052,48 @@ Output: 1020 */
 
 /*---------------------------------------------------------------------------------*/
 
+//Numeric Strings : 
+//JavaScript strings can have numeric content:
+//Example:let x = 100;         // x is a number
+//let y = "100";       // y is a string
+
+//JavaScript will try to convert strings to numbers in all numeric operations:
+//This will work:
+{/*let x = "100";
+let y = "10";
+let z = x / y;   
+document.getElementById("demo").innerHTML = z;
+Output: 10; */}
+
+//This will work:
+{/*let x = "100";
+let y = "10";
+let z = x * y;
+document.getElementById("demo").innerHTML = z;
+Output:1000*/}
+
+//This will work:
+{/* let x = "100";
+let y = "10";
+let z = x / y;
+document.getElementById("demo").innerHTML = z;
+Output: 10 */}
+
+//This will work:
+{/* let x = "100";
+let y = "10";
+let z = x - y;
+document.getElementById("demo").innerHTML = z;
+Output: 90 */}
+
+//But this will not work:
+{/* let x = "100";
+let y = "10";
+let z = x + y;   
+document.getElementById("demo").innerHTML = z;
+Output: 10010}
+//In the this last example JavaScript uses the + operator to concatenate the strings.
+
 /*---------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------------------*/
