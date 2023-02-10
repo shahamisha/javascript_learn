@@ -826,4 +826,147 @@ o; */
 }
 /*---------------------------------------------------------------------------------*/
 
+//JavaScript String Search
+{
+  /*JavaScript Search Methods
+(1)String indexOf()
+(2)String lastIndexOf()
+(3)String search()
+(4)String match()
+(5)String matchAll()
+(6)String includes()
+(7)String startsWith()
+(8)String endsWith() */
+}
+
+//(1)JavaScript String indexOf() : The indexOf() method returns the index of (position of) the first occurrence of a string in a string:
+{
+  /* let text = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = text.indexOf("locate"); */
+  //Output: 7
+}
+//JavaScript counts positions from zero.
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// (2) JavaScript String lastIndexOf()  : The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+{
+  /* let text = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = text.lastIndexOf("locate");
+Output: 21 */
+}
+
+//Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+{
+  /*let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("John");
+Output: -1; */
+}
+
+//The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+{
+  /* let text = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = text.lastIndexOf("locate", 15);
+Output: 7 */
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+// (3) JavaScript String search() :The search() method searches a string for a string (or a regular expression) and returns the position of the match:
+{
+  /*let text = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = text.search("locate");
+// or 
+let str = "Please locate where 'locate' occurs!";
+str.search(/locate/);
+Output : 7*/
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(4)JavaScript String match() : The match() method returns an array containing the results of matching a string against a string (or a regular expression).
+
+{
+  /* let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match("ain");
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+//or
+let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match(/ain/);
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+Output: 1 ain */
+}
+
+//Perform a global search for "ain":
+{
+  /* let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match(/ain/g);
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+Output: 3 ain,ain,ain
+*/
+}
+
+//Perform a global, case-insensitive search for "ain":
+{
+  /* let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match(/ain/gi);
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+Output: 4 ain,AIN,ain,ain */
+}
+
+//Note:  If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(5)JavaScript String matchAll() : The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).
+{
+  /* let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll("Cats");
+document.getElementById("demo").innerHTML = Array.from(iterator);
+Output: Cats,Cats */
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(6)JavaScript String includes() : The includes() method returns true if a string contains a specified value. Otherwise it returns false.
+//includes() is case sensitive.
+{
+  /* let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.includes("world");
+Output: true */
+}
+
+//Check if a string includes "world". Start at position 12:
+{
+  /*let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.includes("world", 12); 
+Output:false  */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(7) JavaScript String startsWith() : The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:
+//startsWith() is case sensitive
+{
+  /*let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.startsWith("Hello");
+Output: true; */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(8) JavaScript String endsWith() : The endsWith() method returns true if a string ends with a specified value. Otherwise it returns false:
+//endsWith() is case sensitive.
+{
+  /*let text = "John Doe";
+document.getElementById("demo").innerHTML = text.endsWith("Doe");
+Output: true */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------*/
+
 /*---------------------------------------------------------------------------------*/
