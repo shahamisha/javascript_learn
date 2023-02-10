@@ -1026,7 +1026,29 @@ document.getElementById("demo").innerHTML = x + "<br>" + y;
 Output: 12300000;
 0.00123; */
 }
+
 /*---------------------------------------------------------------------------------*/
+
+//Adding Numbers and Strings
+//Notes: JavaScript uses the + operator for both addition and concatenation.Numbers are added. Strings are concatenated.
+
+//If you add two numbers, the result will be a number:
+{
+  /*let x = 10;
+let y = 20;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+Output: 30; */
+}
+
+//If you add two strings, the result will be a string concatenation:
+{
+  /*let x = "10";
+let y = "20";
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+Output: 1020 */
+}
 
 /*---------------------------------------------------------------------------------*/
 
