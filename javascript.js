@@ -1009,6 +1009,23 @@ Output: He's often called "Johnny" */
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+//JavaScript Numbers : JavaScript has only one type of number. Numbers can be written with or without decimals.
+{
+  /*let x = 3.14;
+let y = 3;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+Output: 3.14;
+3;*/
+}
+
+//Extra large or extra small numbers can be written with scientific (exponent) notation:
+{
+  /*let x = 123e5;
+let y = 123e-5;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+Output: 12300000;
+0.00123; */
+}
 /*---------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------------------*/
