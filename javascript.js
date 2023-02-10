@@ -960,6 +960,23 @@ Output: true; */
 document.getElementById("demo").innerHTML = text.endsWith("Doe");
 Output: true */
 }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//JavaScript Template Literals
+// Synonyms:
+// Template Literals
+// Template Strings
+// String Templates
+// Back-Tics Syntax
+
+//Back-Tics Syntax :  (Template Literals use back-ticks (``) rather than the quotes ("") to define a string:)
+{
+  /*let text = `Hello world!`;
+document.getElementById("demo").innerHTML = text;
+Output: Hello world! */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
