@@ -1117,3 +1117,72 @@ Output: 4
 Infinity */}
 
 /*---------------------------------------------------------------------------------*/
+
+//Hexadecimal
+//JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+{/* let x = 0xFF;
+document.getElementById("demo").innerHTML = "0xFF = " + x;
+Output: 0xFF = 255 */}
+
+//By default, JavaScript displays numbers as base 10 decimals.
+//But you can use the toString() method to output numbers from base 2 to base 36.
+//Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+{/* let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
+
+"Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+"Duodecimal (base 12): " + myNumber.toString(12) + "<br>" +
+"Decimal (base 10): " + myNumber.toString(10) + "<br>" +
+"Octal (base 8): " + myNumber.toString(8) + "<br>" +
+"Binary (base 2): " + myNumber.toString(2);
+Output: Decimal 32 =
+Hexatrigesimal (base 36): w
+Duotrigesimal (base 32): 10
+Hexadecimal (base 16): 20
+Duodecimal (base 12): 28
+Decimal (base 10): 32
+Octal (base 8): 40
+Binary (base 2): 100000 */}
+
+//JavaScript Numbers as Objects
+{/* Normally JavaScript numbers are primitive values created from literals:
+let x =123;
+
+But numbers can also be defined as objects with the keyword new:
+let y = new Number(123);
+
+//Example:
+// x is a number
+let x = 123;
+
+// y is a Number object
+let y = new Number(123);
+
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+Output: number
+object */}
+
+//Note: Do not create Number objects.
+//The new keyword complicates the code and slows down execution speed.
+
+//When using the == operator, x and y are equal:
+{/*// x is a number
+let x = 500;
+// y is an object
+let y = new Number(500);
+document.getElementById("demo").innerHTML = (x==y);
+Output: true */}
+
+
+//When using the === operator, x and y are not equal.
+{/* // x is a number
+let x = 500;
+// y is an object
+let y = new Number(500);
+document.getElementById("demo").innerHTML = (x===y);
+Output: false */}
+
+//Note: Comparing two JavaScript objects always returns false.
