@@ -1237,3 +1237,46 @@ let y = Number(x) / 2;
 
 document.getElementById("demo").innerHTML = y; 
 Output: 2.5 */}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//Precision Curiosity
+//Rounding can compromise program security:
+// Minimum and Maximum Safe Integers
+// ES6 added max and min properties to the Number object:
+
+// MAX_SAFE_INTEGER
+// MIN_SAFE_INTEGER
+
+//MAX_SAFE_INTEGER Example
+{/* let x = 9007199254740992 === 9007199254740993;
+document.getElementById("demo").innerHTML = x;
+Output:true */}
+
+//MIN_SAFE_INTEGER Example
+{/* let  x = Number.MIN_SAFE_INTEGER;
+document.getElementById("demo").innerHTML = x;
+Output:-9007199254740991 */}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//The Number.isInteger() Method: The Number.isInteger() method returns true if the argument is an integer.
+
+//Example: isInteger()
+{/* document.getElementById("demo").innerHTML =
+Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+Output:true
+false
+*/ }
+
+
+//The Number.isSafeInteger() Method
+//A safe integer is an integer that can be exactly represented as a double precision number.
+//The Number.isSafeInteger() method returns true if the argument is a safe integer.
+//Example isSafeInteger()
+{/*document.getElementById("demo").innerHTML =
+Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
+Output: true
+false*/}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
