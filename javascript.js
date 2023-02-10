@@ -1186,3 +1186,32 @@ document.getElementById("demo").innerHTML = (x===y);
 Output: false */}
 
 //Note: Comparing two JavaScript objects always returns false.
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//JavaScript BigInt : JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+//JavaScript integers are only accurate up to 15 digits:
+//Integer Precision
+{/* let x = 999999999999999;
+let y = 9999999999999999;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+Output: 999999999999999
+10000000000000000 */}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//How to Create a BigInt: (To create a BigInt, append n to the end of an integer or call BigInt():)
+{/* let x = 9999999999999999;
+let y = BigInt("9999999999999999");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+Output: 10000000000000000
+9999999999999999 */}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//BigInt: A new JavaScript Datatype : The JavaScript typeof a BigInt is "bigint":
+{/* let x = BigInt("9999999999999999");
+document.getElementById("demo").innerHTML = typeof x;
+Output: bihinit */}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
