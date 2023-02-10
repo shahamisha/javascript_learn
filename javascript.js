@@ -1215,3 +1215,18 @@ document.getElementById("demo").innerHTML = typeof x;
 Output: bihinit */}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//BigInt Operators : Operators that can be used on a JavaScript Number can also be used on a BigInt.
+//BigInt Multiplication Example
+{/* let x = 9007199254740995n;
+let y = 9007199254740995n;
+let z = x * y;
+document.getElementById("demo").innerHTML = z; 
+Output: 81129638414606735738984533590025
+*/}
+
+//Notes: Notes
+// Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
+// Unsigned right shift (>>>) can not be done on a BigInt (it does not have a fixed width).
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
