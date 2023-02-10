@@ -1230,3 +1230,10 @@ Output: 81129638414606735738984533590025
 // Unsigned right shift (>>>) can not be done on a BigInt (it does not have a fixed width).
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//BigInt Decimals : A BigInt can not have decimals.
+{/* let x = 5n;
+let y = Number(x) / 2;
+
+document.getElementById("demo").innerHTML = y; 
+Output: 2.5 */}
