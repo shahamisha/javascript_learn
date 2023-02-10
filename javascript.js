@@ -1096,4 +1096,24 @@ Output: 10010}
 
 /*---------------------------------------------------------------------------------*/
 
+//Infinity : Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+
+{/*let myNumber = 2; 
+let txt = "";
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
+Output: 4
+16
+256
+65536
+4294967296
+18446744073709552000
+3.402823669209385e+38
+1.157920892373162e+77
+1.3407807929942597e+154
+Infinity */}
+
 /*---------------------------------------------------------------------------------*/
