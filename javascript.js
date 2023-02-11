@@ -1052,53 +1052,64 @@ Output: 1020 */
 
 /*---------------------------------------------------------------------------------*/
 
-//Numeric Strings : 
+//Numeric Strings :
 //JavaScript strings can have numeric content:
 //Example:let x = 100;         // x is a number
 //let y = "100";       // y is a string
 
 //JavaScript will try to convert strings to numbers in all numeric operations:
 //This will work:
-{/*let x = "100";
+{
+  /*let x = "100";
 let y = "10";
 let z = x / y;   
 document.getElementById("demo").innerHTML = z;
-Output: 10; */}
+Output: 10; */
+}
 
 //This will work:
-{/*let x = "100";
+{
+  /*let x = "100";
 let y = "10";
 let z = x * y;
 document.getElementById("demo").innerHTML = z;
-Output:1000*/}
+Output:1000*/
+}
 
 //This will work:
-{/* let x = "100";
+{
+  /* let x = "100";
 let y = "10";
 let z = x / y;
 document.getElementById("demo").innerHTML = z;
-Output: 10 */}
+Output: 10 */
+}
 
 //This will work:
-{/* let x = "100";
+{
+  /* let x = "100";
 let y = "10";
 let z = x - y;
 document.getElementById("demo").innerHTML = z;
-Output: 90 */}
+Output: 90 */
+}
 
 //But this will not work:
-{/* let x = "100";
+{
+  /* let x = "100";
 let y = "10";
 let z = x + y;   
 document.getElementById("demo").innerHTML = z;
-Output: 10010}
+Output: 10010*/
+}
 //In the this last example JavaScript uses the + operator to concatenate the strings.
 
 /*---------------------------------------------------------------------------------*/
 
 //Infinity : Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
 
-{/*let myNumber = 2; 
+{
+  /*let myNumber = 2; 
 let txt = "";
 while (myNumber != Infinity) {
    myNumber = myNumber * myNumber;
@@ -1114,20 +1125,24 @@ Output: 4
 3.402823669209385e+38
 1.157920892373162e+77
 1.3407807929942597e+154
-Infinity */}
+Infinity */
+}
 
 /*---------------------------------------------------------------------------------*/
 
 //Hexadecimal
 //JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
-{/* let x = 0xFF;
+{
+  /* let x = 0xFF;
 document.getElementById("demo").innerHTML = "0xFF = " + x;
-Output: 0xFF = 255 */}
+Output: 0xFF = 255 */
+}
 
 //By default, JavaScript displays numbers as base 10 decimals.
 //But you can use the toString() method to output numbers from base 2 to base 36.
 //Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
-{/* let myNumber = 32;
+{
+  /* let myNumber = 32;
 document.getElementById("demo").innerHTML =
 "Decimal 32 = " + "<br><br>" + 
 
@@ -1145,10 +1160,12 @@ Hexadecimal (base 16): 20
 Duodecimal (base 12): 28
 Decimal (base 10): 32
 Octal (base 8): 40
-Binary (base 2): 100000 */}
+Binary (base 2): 100000 */
+}
 
 //JavaScript Numbers as Objects
-{/* Normally JavaScript numbers are primitive values created from literals:
+{
+  /* Normally JavaScript numbers are primitive values created from literals:
 let x =123;
 
 But numbers can also be defined as objects with the keyword new:
@@ -1163,27 +1180,31 @@ let y = new Number(123);
 
 document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
 Output: number
-object */}
+object */
+}
 
 //Note: Do not create Number objects.
 //The new keyword complicates the code and slows down execution speed.
 
 //When using the == operator, x and y are equal:
-{/*// x is a number
+{
+  /*// x is a number
 let x = 500;
 // y is an object
 let y = new Number(500);
 document.getElementById("demo").innerHTML = (x==y);
-Output: true */}
-
+Output: true */
+}
 
 //When using the === operator, x and y are not equal.
-{/* // x is a number
+{
+  /* // x is a number
 let x = 500;
 // y is an object
 let y = new Number(500);
 document.getElementById("demo").innerHTML = (x===y);
-Output: false */}
+Output: false */
+}
 
 //Note: Comparing two JavaScript objects always returns false.
 
@@ -1192,38 +1213,46 @@ Output: false */}
 //JavaScript BigInt : JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
 //JavaScript integers are only accurate up to 15 digits:
 //Integer Precision
-{/* let x = 999999999999999;
+{
+  /* let x = 999999999999999;
 let y = 9999999999999999;
 document.getElementById("demo").innerHTML = x + "<br>" + y;
 Output: 999999999999999
-10000000000000000 */}
+10000000000000000 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //How to Create a BigInt: (To create a BigInt, append n to the end of an integer or call BigInt():)
-{/* let x = 9999999999999999;
+{
+  /* let x = 9999999999999999;
 let y = BigInt("9999999999999999");
 document.getElementById("demo").innerHTML = x + "<br>" + y;
 Output: 10000000000000000
-9999999999999999 */}
+9999999999999999 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //BigInt: A new JavaScript Datatype : The JavaScript typeof a BigInt is "bigint":
-{/* let x = BigInt("9999999999999999");
+{
+  /* let x = BigInt("9999999999999999");
 document.getElementById("demo").innerHTML = typeof x;
-Output: bihinit */}
+Output: bihinit */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //BigInt Operators : Operators that can be used on a JavaScript Number can also be used on a BigInt.
 //BigInt Multiplication Example
-{/* let x = 9007199254740995n;
+{
+  /* let x = 9007199254740995n;
 let y = 9007199254740995n;
 let z = x * y;
 document.getElementById("demo").innerHTML = z; 
 Output: 81129638414606735738984533590025
-*/}
+*/
+}
 
 //Notes: Notes
 // Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
@@ -1232,11 +1261,13 @@ Output: 81129638414606735738984533590025
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //BigInt Decimals : A BigInt can not have decimals.
-{/* let x = 5n;
+{
+  /* let x = 5n;
 let y = Number(x) / 2;
 
 document.getElementById("demo").innerHTML = y; 
-Output: 2.5 */}
+Output: 2.5 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -1249,40 +1280,48 @@ Output: 2.5 */}
 // MIN_SAFE_INTEGER
 
 //MAX_SAFE_INTEGER Example
-{/* let x = 9007199254740992 === 9007199254740993;
+{
+  /* let x = 9007199254740992 === 9007199254740993;
 document.getElementById("demo").innerHTML = x;
-Output:true */}
+Output:true */
+}
 
 //MIN_SAFE_INTEGER Example
-{/* let  x = Number.MIN_SAFE_INTEGER;
+{
+  /* let  x = Number.MIN_SAFE_INTEGER;
 document.getElementById("demo").innerHTML = x;
-Output:-9007199254740991 */}
+Output:-9007199254740991 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //The Number.isInteger() Method: The Number.isInteger() method returns true if the argument is an integer.
 
 //Example: isInteger()
-{/* document.getElementById("demo").innerHTML =
+{
+  /* document.getElementById("demo").innerHTML =
 Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
 Output:true
 false
-*/ }
-
+*/
+}
 
 //The Number.isSafeInteger() Method
 //A safe integer is an integer that can be exactly represented as a double precision number.
 //The Number.isSafeInteger() method returns true if the argument is a safe integer.
 //Example isSafeInteger()
-{/*document.getElementById("demo").innerHTML =
+{
+  /*document.getElementById("demo").innerHTML =
 Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
 Output: true
-false*/}
+false*/
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //JavaScript Number Methods
-{/* These number methods can be used on all JavaScript numbers:
+{
+  /* These number methods can be used on all JavaScript numbers:
 
 Method	Description
 (1)toString()        ->    Returns a number as a string
@@ -1290,12 +1329,14 @@ Method	Description
 (3)toFixed()	        ->     Returns a number written with a number of decimals
 (4)toPrecision()     -> 	Returns a number written with a specified length
 (5)ValueOf() 	      ->    Returns a number as a number
-*/}
+*/
+}
 
 //(1) The toString() Method  : (The toString() method returns a number as a string.
 //All number methods can be used on any type of numbers (literals, variables, or expressions):)
 
-{/* <script>
+{
+  /* <script>
 let x = 123;
 document.getElementById("demo").innerHTML =
   x.toString() + "<br>" +
@@ -1304,14 +1345,16 @@ document.getElementById("demo").innerHTML =
 </script>
 Output: 123
 123
-123 */}
-  
+123 */
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 // (2) The toExponential() Method: (toExponential() returns a string, with a number rounded and written using exponential notation.
 // A parameter defines the number of characters behind the decimal point:)
 
-{/* <script>
+{
+  /* <script>
 let x = 9.656;
 document.getElementById("demo").innerHTML =
   x.toExponential() + "<br>" + 
@@ -1322,14 +1365,16 @@ document.getElementById("demo").innerHTML =
 Output: 9.656e+0
 9.66e+0
 9.6560e+0
-9.656000e+0 */}
+9.656000e+0 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 // (3) The toFixed() Method
 // toFixed() returns a string, with the number written with a specified number of decimals:
 
-{/* <script>
+{
+  /* <script>
       let x = 9.656;
       document.getElementById("demo").innerHTML =
         x.toFixed(0) +
@@ -1343,14 +1388,16 @@ Output: 9.656e+0
 Output: 10
 9.66
 9.6560
-9.656000 */}
+9.656000 */
+}
 //toFixed(2) is perfect for working with money.
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //(4) The toPrecision() Method : (toPrecision() returns a string, with a number written with a specified length)
 
-{/* <script>
+{
+  /* <script>
 let x = 9.656;
 document.getElementById("demo").innerHTML = 
   x.toPrecision() + "<br>" +
@@ -1361,59 +1408,173 @@ document.getElementById("demo").innerHTML =
 Output: 9.656
 9.7
 9.656
-9.65600 */}
+9.65600 */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //(5) The valueOf() Method: (valueOf() returns a number as a number.)
-{/*<script>
+{
+  /*
 let x = 123;
 
 document.getElementById("demo").innerHTML = 
   x.valueOf() + "<br>" +
   (123).valueOf() + "<br>" +
   (100 + 23).valueOf();
-</script>
+
 Output: 123
 123
-123 */}
+123 */
+}
 
-{/* Notes: In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).
+{
+  /* Notes: In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).
 ->The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
 ->There is no reason to use it in your code.
 
-->All JavaScript data types have a valueOf() and a toString() method.*/}
+->All JavaScript data types have a valueOf() and a toString() method.*/
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//JavaScript Number Properties
+
+{
+  /* Property	          Description
+EPSILON	            The difference between 1 and the smallest number > 1.
+MAX_VALUE	          The largest number possible in JavaScript
+MIN_VALUE	          The smallest number possible in JavaScript
+MAX_SAFE_INTEGER	  The maximum safe integer (253 - 1)
+MIN_SAFE_INTEGER  	The minimum safe integer -(253 - 1)
+POSITIVE_INFINITY	  Infinity (returned on overflow)
+NEGATIVE_INFINITY	  Negative infinity (returned on overflow)
+NaN	A               "Not-a-Number" value */
+}
+
+//(1)JavaScript EPSILON: (Number.EPSILON is the difference between 1 and the smallest floating point number greater than 1.)
+{
+  /* let x = Number.EPSILON;
+document.getElementById("demo").innerHTML = x;
+//Output: 2.220446049250313e-16 */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+//(2) JavaScript MAX_VALUE: (Number.MAX_VALUE is a constant representing the largest possible number in JavaScript)
+
+{
+  /* let x = Number.MAX_VALUE;
+document.getElementById("demo").innerHTML = x;
+//Output: 1.7976931348623157e+308
+*/
+}
+
+{
+  /*Notes: Number Properties Cannot be Used on Variables
+-> Number properties belong to the JavaScript Number Object.
+-> These properties can only be accessed as Number.MAX_VALUE.
+-> Using x.MAX_VALUE, where x is a variable or a value, will return undefined:
+//Example:
+let x = 6;
+document.getElementById("demo").innerHTML = x.MAX_VALUE;
+Output: undefined */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(3) JavaScript MIN_VALUE: (Number.MIN_VALUE is a constant representing the lowest possible number in JavaScript.)
+
+{
+  /* let x = Number.MIN_VALUE;
+document.getElementById("demo").innerHTML = x;
+//Output: 5e-324; */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+//(4) JavaScript MAX_SAFE_INTEGER
+//->Number.MAX_SAFE_INTEGER represents the maximum safe integer in JavaScript.
+//->Number.MAX_SAFE_INTEGER is (253-1)(//2 ni 53 ghat -1)
+
+{
+  /*let x = Number.MAX_SAFE_INTEGER;
+document.getElementById("demo").innerHTML = x;
+//Output: 9007199254740991; */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// (5) JavaScript MIN_SAFE_INTEGER : (Number.MIN_SAFE_INTEGER represents the minimum safe integer in JavaScript.
+// ->Number.MIN_SAFE_INTEGER is -(253 - 1) (//-2 ni 53 ghat -1).)
+{
+  /* let x = Number.MIN_SAFE_INTEGER;
+document.getElementById("demo").innerHTML = x;
+//Output: -9007199254740991 */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(6) JavaScript POSITIVE_INFINITY:
+//Example:
+{
+  /*let x = Number.POSITIVE_INFINITY;
+document.getElementById("demo").innerHTML = x;
+//Output: Infinity */
+}
+
+//POSITIVE_INFINITY is returned on overflow:
+{
+  /* let x = 1 / 0;
+document.getElementById("demo").innerHTML = x;
+//Output: Infinity */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(7) JavaScript NEGATIVE_INFINITY:
+
+{
+  /*let x = Number.NEGATIVE_INFINITY;
+document.getElementById("demo").innerHTML = x;
+//Output:  -Infinity */
+}
+
+//NEGATIVE_INFINITY is returned on overflow:
+{
+  /* let x = -1 / 0;
+document.getElementById("demo").innerHTML = x;
+//Output:  -Infinity */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//(8) JavaScript NaN - Not a Number: ( NaN is a JavaScript reserved word for a number that is not a legal number.)
+
+{
+  /* document.getElementById("demo").innerHTML = Number.NaN;
+//Output:  NaN */
+}
+
+//Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+{
+  /* document.getElementById("demo").innerHTML = 100 / "Apple";
+//Output:  NaN */
+}
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
